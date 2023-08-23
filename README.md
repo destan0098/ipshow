@@ -39,7 +39,7 @@ or
 
 ---
 
-##ScreenShot
+## ScreenShot
 
 ![IP Show](/ScreenShot.png?raw=true "IP Show")
 
