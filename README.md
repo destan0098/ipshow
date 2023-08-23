@@ -14,8 +14,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+
 
 ## Installation
 
@@ -28,15 +27,21 @@ go install github.com/destan0098/ipshow@latest
 show Just IP
 ```
 cat iplist.txt | ipshow -ip
+ echo google.com| ipshow -ip
 ```
 show Domain and  IP
 ```
-cat iplist.txt | ipshow -ipd 
+cat iplist.txt | ipshow -ipd
+or
+ echo google.com| ipshow -ipd
 ```
 
 
 ---
 
+##ScreenShot
+
+![IP Show](/ScreenShot.png?raw=true "IP Show")
 
 
 ## Features
