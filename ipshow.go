@@ -16,6 +16,7 @@ func main() {
 	//	fmt.Println("Error:", err)
 	//	return
 	//}
+
 	ipshowj := flag.Bool("ip", false, "Show Just IP")
 	ipdomainshowj := flag.Bool("ipd", false, "Show Just IP AND Domain")
 	help := flag.Bool("h", false, "Show help")
