@@ -34,7 +34,7 @@ func main() {
 
 			ips, err := net.LookupIP(line)
 			if err != nil {
-				fmt.Println("Error:", err)
+				fmt.Println("Error: Not RESOLVED , Maybe it doesn't have an IP. ")
 				continue
 			}
 
@@ -47,7 +47,7 @@ func main() {
 			line := scanner.Text()
 			ips, err := net.LookupIP(line)
 			if err != nil {
-				fmt.Println("Error:", err)
+				fmt.Println("Error: Not RESOLVED , Maybe it doesn't have an IP. ")
 				continue
 			}
 			ipurl := fmt.Sprintf("%s", ips[0])
@@ -60,7 +60,7 @@ func main() {
 			fmt.Println("Received:", line)
 			ips, err := net.LookupIP(line)
 			if err != nil {
-				fmt.Println("Error:", err)
+				fmt.Println("Error: Not RESOLVED , Maybe it doesn't have an IP. ")
 				continue
 			}
 			ipurl := fmt.Sprintf("%s", ips[0])
