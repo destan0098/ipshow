@@ -21,6 +21,7 @@ func main() {
 		fmt.Println("-ip : To Show Just IP")
 		fmt.Println("-ipd : To Show Domain with IP")
 	}
+	//give from Pipe Line
 	scanner := bufio.NewScanner(os.Stdin)
 	if *ipshowj == true {
 
