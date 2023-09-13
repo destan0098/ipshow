@@ -9,13 +9,8 @@ import (
 )
 
 func main() {
-	//domain := u.Hostname()
-	//
-	//ips, err := net.LookupIP(domain)
-	//if err != nil {
-	//	fmt.Println("Error:", err)
-	//	return
-	//}
+
+	//Receive input from the user.
 
 	ipshowj := flag.Bool("ip", false, "Show Just IP")
 	ipdomainshowj := flag.Bool("ipd", false, "Show Just IP AND Domain")
