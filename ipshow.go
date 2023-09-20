@@ -11,20 +11,23 @@ import (
 func main() {
 
 	//Receive input from the user.
-
+	// Define command-line flags
 	ipshowj := flag.Bool("ip", false, "Show Just IP")
 	ipdomainshowj := flag.Bool("ipd", false, "Show Just IP AND Domain")
 	help := flag.Bool("h", false, "Show help")
+	// Parse command-line arguments
 	flag.Parse()
+	// Display help message if requested
 	if *help {
 		fmt.Println("-h : To Show Help")
 		fmt.Println("-ip : To Show Just IP")
 		fmt.Println("-ipd : To Show Domain with IP")
 	}
 	//give from Pipe Line
+	// Create a scanner to read input data
 	scanner := bufio.NewScanner(os.Stdin)
 	if *ipshowj == true {
-
+		// Show just the IP address
 		for scanner.Scan() {
 			line := scanner.Text()
 
@@ -39,6 +42,7 @@ func main() {
 		// Read input data line by line
 
 	} else if *ipdomainshowj == true {
+		// Show both the domain and the IP address
 		for scanner.Scan() {
 			line := scanner.Text()
 			ips, err := net.LookupIP(line)
@@ -51,6 +55,7 @@ func main() {
 		}
 
 	} else {
+		// Default behavior: Show received input and IP address
 		for scanner.Scan() {
 			line := scanner.Text()
 			fmt.Println("Received:", line)
