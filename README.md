@@ -25,18 +25,28 @@ go install github.com/destan0098/ipshow@latest
 
 show Just IP
 ```
-cat iplist.txt | ipshow -ip
- echo google.com| ipshow -ip
+    cat iplist.txt | ipshow -ip
+or
+    echo google.com| ipshow -ip
+or
+    ipshow -ipd -d google.com
 ```
 show Domain and  IP
 ```
-    cat iplist.txt | ipshow -ip -pipe
+    cat iplist.txt | ipshow -ipd -pipe
 or
-    echo google.com| ipshow -ip -pipe
+    echo google.com| ipshow -ipd -pipe
 or
-    ipshow -ip -d google.com
+    ipshow -ipd -d google.com
 ```
-
+show Domain and  IP info
+```
+    cat iplist.txt | ipshow -ipin -pipe
+or
+    echo google.com| ipshow -ipin -pipe
+or
+    ipshow -ipin -d google.com
+```
 
 ---
 
