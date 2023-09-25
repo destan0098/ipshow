@@ -30,9 +30,11 @@ cat iplist.txt | ipshow -ip
 ```
 show Domain and  IP
 ```
-cat iplist.txt | ipshow -ipd
+    cat iplist.txt | ipshow -ip -pipe
 or
- echo google.com| ipshow -ipd
+    echo google.com| ipshow -ip -pipe
+or
+    ipshow -ip -d google.com
 ```
 
 
@@ -40,7 +42,7 @@ or
 
 ## ScreenShot
 
-![IP Show](/ScreenShot1.png?raw=true "IP Show")
+![IP Show](/ScreenShot.png?raw=true "IP Show")
 
 
 ## Features
