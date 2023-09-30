@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"flag"
 	"fmt"
-	"github.com/destan0098/ipshow/IPINfo"
+	"github.com/destan0098/ipshow/cmd/IPINfo"
 	"net"
 	"os"
 )
